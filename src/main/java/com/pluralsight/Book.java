@@ -41,17 +41,17 @@ public class Book {
             checkedOutTo = name;
             System.out.println(" yes " + title + "\" checked out to " + name + ".");
         } else {
-            System.out.println("⚠No That book is already checked out.");
+            System.out.println(" No That book is already checked out.");
         }
     }
 
     public void checkIn() {
         if (isCheckedOut) {
-            System.out.println("📖 \"" + title + "\" returned by " + checkedOutTo + ".");
+            System.out.println("book \"" + title + "\" returned by " + checkedOutTo + ".");
             isCheckedOut = false;
             checkedOutTo = "";
         } else {
-            System.out.println("⚠️ That book isn’t checked out.");
+            System.out.println(" That book isn’t checked out.");
         }
     }
 
